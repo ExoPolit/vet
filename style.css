@@ -213,6 +213,12 @@ SPECS
 .specs__images:hover{
    transform: scale(1.1);
 }
+/*
+
+FAQ'S
+
+*/
+
 
 .faq__info--wrapper{
   text-align: center;
