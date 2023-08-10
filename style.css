@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: linear-gradient(180deg, #fff 15.1%, #e1c5b7 100%);
+}
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 64px;
+}
+h2,
+h3 {
+  font-size: 24px;
+}
+li {
+  font-size: 22px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  height: 800px;
+  background-image: url(./Tierarzt__IMG__Nadine/top__img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 60%;
+}
+
+.header__container {
+  text-align: center;
+  color: white;
+}
+
+.header__para {
+  position: absolute;
+  right: 32rem;
+  bottom: 16rem;
+}
+
+.header__para span {
+  font-size: 48px;
+}
+#svg {
+  padding: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.svg__file:hover {
+  cursor: pointer;
+}
+.link {
+  position: relative;
+  text-align: left;
+  top: 8em;
+  opacity: 0;
+}
+
+/*
+
+Anschrift 
+
+*/
+
+section .anschrift__container {
+  margin-top: -32px;
+}
+
+.anschrift__container--wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.anschrift__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 104px 0;
+  text-align: center;
+  background-color: white;
+  width: 312px;
+}
+.anschrift__wrapper,
+iframe {
+  border-radius: 16px;
+}
+.anschrift__list {
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+/* 
+
+Kontakt
+
+*/
+
+.kontakt__container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.kontakt__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 2;
+  border-radius: 16px;
+  background-color: white;
+  width: 312px;
+  height: 400px;
+  left: 0;
+  bottom: 0;
+}
+.kontakt__li a {
+  color: black;
+  font-size: 24px;
+}
+.kontakt__icons {
+  padding-right: 10px;
+  width: 35px;
+}
+
+/*
+
+TIMES
+
+*/
+.times__container {
+  margin-top: 48px;
+}
+.times__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative; /* Make the wrapper a positionnig context */
+}
+
+.times__list--wrapper {
+  position: absolute;
+  text-align: center;
+  top: 50%; /*Position the text vertically */
+  left: 28%; /* Position the text horizontally */
+  transform: translate(-50%, -50%); /* Center the Text */
+  width: 390px;
+}
+.times__list {
+  padding: 24px;
+  line-height: 2;
+}
+.times__para a {
+  color: red;
+  font-size: 24px;
+}
+
+/*
+
+SPECS
+
+*/
+
+.specs__container {
+  margin-top: 128px;
+  margin-bottom: 128px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.specs__group--top img,
+.specs_group--bottom img {
+  padding-left: 32px;
+  
+}
+
+.specs__group--top,
+.specs_group--bottom {
+  filter: drop-shadow(5px 5px 8px #9999a5);
+  position: relative;
+  display: flex;
+}
+.specs__images{
+  transition: all 300ms ease;
+}
+
+.specs__group--top span,
+.specs_group--bottom span {
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  top: 8rem;
+  margin-left: 5.5rem;
+  overflow: hidden;
+}
+.specs__images:hover{
+   transform: scale(1.1);
+}
+
+.faq__info--wrapper{
+  text-align: center;
+
+}
+
+.faq__dropdown{
+  width: 400px;
+  background: #d9d9d9;
+  margin: 1px auto;
+}
+.faq__dropdown span{
+  padding: 30px;
+  background: #2d2f31;
+  color: white;
+  font-size: 1.8em;
+  cursor: pointer;
+  display: block;
+}
+
+.faq__dropdown span::after{
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide{
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li{
+  padding: 30px;
+}
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch:checked + .slide {
+  height: auto;
+}
+#touch2 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch2:checked + .slide {
+  height: auto;
+}
+#touch3 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch3:checked + .slide {
+  height: auto;
+}
+#touch4 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch4:checked + .slide {
+  height: auto;
+}
+#touch5{
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch5:checked + .slide {
+  height: auto;
+}
+#touch6 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch6:checked + .slide {
+  height: auto;
+}
+#touch7 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch7:checked + .slide {
+  height: auto;
+}
+#touch8 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch8:checked + .slide {
+  height: auto;
+}
+#touch9 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch9:checked + .slide {
+  height: auto;
+}
+
+
