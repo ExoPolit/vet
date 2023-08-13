@@ -27,9 +27,11 @@ li {
 a {
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+}
 .header {
-  width: 100%;
-  height: 800px;
+  min-height: 800px;
   background-image: url(./Tierarzt__IMG__Nadine/top__img.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -188,7 +190,6 @@ SPECS
 .specs__group--top img,
 .specs_group--bottom img {
   padding-left: 32px;
-  
 }
 
 .specs__group--top,
@@ -197,7 +198,7 @@ SPECS
   position: relative;
   display: flex;
 }
-.specs__images{
+.specs__images {
   transition: all 300ms ease;
 }
 
@@ -210,51 +211,69 @@ SPECS
   margin-left: 5.5rem;
   overflow: hidden;
 }
-.specs__images:hover{
-   transform: scale(1.1);
+.specs__images:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 /*
 
 FAQ'S
 
 */
+.faq__container {
+  border-radius: 16px;
+  background: white !important;
+}
 
-
-.faq__info--wrapper{
+.faq__info--wrapper {
   text-align: center;
-
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.faq__questions span{
+  border-radius: 16px;
+}
+.faq__questions{
+padding-top: 32px;
 }
 
-.faq__dropdown{
-  width: 400px;
+.faq__dropdown {
+  max-width: 850px;
+ border-radius: 16px;
   background: #d9d9d9;
-  margin: 1px auto;
+  margin: 32px auto;
+  text-align: left;
+  box-shadow: 5px 5px 8px 0px rgba(153, 153, 165, 0.25), 5px 5px 8px 2px rgba(153, 153, 165, 0.25);
 }
-.faq__dropdown span{
+.faq__dropdown span {
   padding: 30px;
-  background: #2d2f31;
-  color: white;
+  background: #f0f0f0;
+  color: black;
   font-size: 1.8em;
   cursor: pointer;
   display: block;
 }
 
-.faq__dropdown span::after{
+.faq__dropdown span::after {
   float: right;
   right: 10%;
   content: "+";
 }
 
-.slide{
+.slide {
   clear: both;
   width: 100%;
   height: 0px;
   overflow: hidden;
   text-align: center;
-  transition: height .4s ease;
+  transition: height 0.4s ease;
 }
 
-.slide li{
+.slide li {
   padding: 30px;
 }
 #touch {
@@ -289,7 +308,7 @@ FAQ'S
 #touch4:checked + .slide {
   height: auto;
 }
-#touch5{
+#touch5 {
   position: absolute;
   opacity: 0;
   height: 0px;
@@ -329,5 +348,57 @@ FAQ'S
 #touch9:checked + .slide {
   height: auto;
 }
+#touch10 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+#touch10:checked + .slide {
+  height: auto;
+}
+/*
+
+FOOTER
+
+*/
+.footer{
+  background-color: white;
+  margin-top: 56px;
+
+}
+.footer__container{
+  min-height: 273px;
+}
+.footer__container--wrapper{
+  padding: 64px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
+.footer__infos{
+  display: flex;
+  align-items: center;
+
+}
+.footer__info--para{
+  font-size: 24px;
+  padding-left: 16px;
+}
+.footer__link{
+padding-left: 64px;
+font-size: 24px;
+transition: all 500ms ease;
+}
+
+@media screen and  (max-width: 550px) {
+
+section{
+  display: flex;
+}
+.header__container{
+  width: 100%;
+}
+
+}
