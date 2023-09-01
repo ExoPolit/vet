@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="main.js" defer></script>
+    <script
+    src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Document</title>
   </head>
   <body>
@@ -14,19 +18,29 @@
           <h1>Tierarzt am Gesundbrunnen</h1>
           <span>Dr. Till Robl</span>
         </div>
-        <div class="topnav">
-          <nav id="navLinks">
-            <li class="link"></li>
-            <li class="link"></li>
-            <li class="link"></li>
-          </nav>
-          <figure id="svg">
-            <img
-              class="svg__file"
-              src="./Tierarzt__IMG__Nadine/hamburger.svg"
-              alt=""
-            />
-          </figure>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+      <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+             
+          </button>
+          <ul class="menu__links">
+              <li class="menu__list">
+                  <a href="#home" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                  <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+              </li>
+              <li class="menu__list">
+                  <a href="#contact" class="menu__link" onclick="closeMenu()">Contact</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
         </div>
       </div>
     </header>
