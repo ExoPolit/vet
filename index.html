@@ -11,6 +11,8 @@
   ></script>
     <title>Document</title>
   </head>
+
+
   <body>
     <header class="header">
       <div class="header__container">
@@ -18,11 +20,20 @@
           <h1>Tierarzt am Gesundbrunnen</h1>
           <span>Dr. Till Robl</span>
         </div>
+
+        <div class="hamburger__container">
         <button class="btn__menu" onclick="openMenu()">
-      <figure>
+      <figure class="hamburger">
         <img src="./icons/Hamburger.svg" alt="">
       </figure>
         </button>
+        <figure class="hamburger ham__whatsApp">
+        <img src="./icons/WhatsappSVG.svg" alt="">
+        </figure>
+        <figure class="hamburger ham__telephon">
+          <img src="./icons/TelefonSVG.svg" alt="">
+        </figure>
+      </div>
       <nav>
       <div class="menu__backdrop">
           <button class="btn__menu btn__menu--close" onclick="closeMenu()">
@@ -42,13 +53,13 @@
           </ul>
       </div>
     </nav>
-
-        </div>
+    
+     
       </div>
     </header>
+ 
 
 
-    
     <main>
       <!---Anschrift-->
       <section id="anschrift">
