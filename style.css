@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: linear-gradient(180deg, #fff 15.1%, #e1c5b7 100%);
 }
@@ -31,12 +34,12 @@ a:hover{
   text-decoration: underline;
 }
 .header {
+  min-width: 1080px;
   height: 880px;
   background-image: url(./Tierarzt__IMG__Nadine/top__img.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 60% 60%;
-  
+  background-position: center 60%;
 }
 
 .header__container {
