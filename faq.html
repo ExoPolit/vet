@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+
+        
+      const dropdowns = document.querySelectorAll(".faq__dropdown");
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          if (this.checked) {
+            // Close all other open dropdowns
+            dropdowns.forEach((dropdown) => {
+              const otherCheckbox = dropdown.querySelector(
+                'input[type="checkbox"]'
+              );
+              if (otherCheckbox !== this && otherCheckbox.checked) {
+                otherCheckbox.checked = false;
+              }
+            });
+          }
+        });
+      });
+
+      function openMenu() {
+        document.body.classList += " menu--open";
+      }
+
+      function closeMenu() {
+        document.body.classList.remove("menu--open");
+      }
+    </script>
+  </head>
+  <body>
+    <section class="faqs">
+      <div class="row">
+        <div class="faq__container">
+          <div class="faq__info--wrapper">
+            <h2>Fragen & Antworten</h2>
+            <div class="faq__questions">
+              <div class="faq__dropdown">
+                <label for="touch"
+                  ><span
+                    >Welche “kleinen Tiere” werden in der Praxis behandelt?
+                  </span></label
+                >
+                <input type="checkbox" id="touch" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch2"><span>Vorsorgeuntersuchung</span></label>
+                <input type="checkbox" id="touch2" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch3"><span>Die richtige Ernährung</span></label>
+                <input type="checkbox" id="touch3" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch4"
+                  ><span
+                    >Kennzeichnung von Tieren durch einen Mikrochip</span
+                  ></label
+                >
+                <input type="checkbox" id="touch4" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch5"
+                  ><span>Parasiten bei Hund und Katz - Flöhe</span></label
+                >
+                <input type="checkbox" id="touch5" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch6"
+                  ><span>Parasiten bei Hund und Katz - Zecken</span></label
+                >
+                <input type="checkbox" id="touch6" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch7"><span>Haftpflichtversicherung</span></label>
+                <input type="checkbox" id="touch7" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch8"
+                  ><span
+                    >Sollte ich eine Krankenversicherung für mein Haustier
+                    abschließen?</span
+                  ></label
+                >
+                <input type="checkbox" id="touch8" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch9"
+                  ><span>Eigendiagnose via Internet</span></label
+                >
+                <input type="checkbox" id="touch9" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__dropdown">
+                <label for="touch10"><span>Abschied</span></label>
+                <input type="checkbox" id="touch10" />
+                <ul class="slide">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur officia nemo animi impedit ad harum!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

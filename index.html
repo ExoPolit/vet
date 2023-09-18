@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="main.js" defer></script>
     <script
-    src="https://kit.fontawesome.com/c8e4d183c2.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
-
 
   <body>
     <header class="header">
@@ -22,43 +21,44 @@
         </div>
 
         <div class="hamburger__container">
-        <button class="btn__menu" onclick="openMenu()">
-      <figure class="hamburger">
-        <img src="./icons/Hamburger.svg" alt="">
-      </figure>
-        </button>
-        <figure class="hamburger ham__whatsApp">
-        <img src="./icons/WhatsappSVG.svg" alt="">
-        </figure>
-        <figure class="hamburger ham__telephon">
-          <img src="./icons/TelefonSVG.svg" alt="">
-        </figure>
-      </div>
-      <nav>
-      <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-              <i class="fas fa-times"></i>
-             
+          <button class="btn__menu" onclick="openMenu()">
+            <figure class="hamburger">
+              <img src="./icons/Hamburger.svg" alt="" />
+            </figure>
           </button>
-          <ul class="menu__links">
+          <figure class="hamburger ham__whatsApp">
+            <img src="./icons/WhatsappSVG.svg" alt="" />
+          </figure>
+          <figure class="hamburger ham__telephon">
+            <img src="./icons/TelefonSVG.svg" alt="" />
+          </figure>
+        </div>
+        <nav>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
               <li class="menu__list">
-                  <a href="#home" class="menu__link" onclick="closeMenu()">Home</a>
+                <a href="#home" class="menu__link" onclick="closeMenu()"
+                  >Home</a
+                >
               </li>
               <li class="menu__list">
-                  <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                <a href="#features" class="menu__link" onclick="closeMenu()"
+                  >Books</a
+                >
               </li>
               <li class="menu__list">
-                  <a href="#contact" class="menu__link" onclick="closeMenu()">Contact</a>
+                <a href="#contact" class="menu__link" onclick="closeMenu()"
+                  >Contact</a
+                >
               </li>
-          </ul>
-      </div>
-    </nav>
-    
-     
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
- 
-
 
     <main>
       <!---Anschrift-->
@@ -76,7 +76,7 @@
               </div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.970119147627!2d13.3848189!3d52.5520654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85223ec9fd5d5%3A0xe882c6a1934021bd!2sTierarztpraxis%20am%20Gesundbrunnen%20-%20Dr.%20Till%20Robl!5e0!3m2!1sen!2sde!4v1691431109056!5m2!1sen!2sde"
-                width="656"
+                width="704"
                 height="400"
                 style="border: 0"
                 allowfullscreen=""
@@ -87,6 +87,7 @@
           </div>
         </div>
       </section>
+
       <!--Kontakt-->
       <section class="kontakt">
         <div class="row">
@@ -110,39 +111,61 @@
                 </li>
               </ul>
             </div>
-            <figure class="kontakt__img">
-              <img src="./Tierarzt__IMG__Nadine/Donkey2.png" alt="donkey img" />
-            </figure>
+            <div class="times__list--wrapper">
+              <h2>Sprechzeiten</h2>
+              <ul class="times__list">
+                <li><h3>Montag & Freitag</h3></li>
+                <li>09:00-11:00 Uhr & 15:00-18:00 Uhr</li>
+                <li><h3>Dienstag-Donnerstag</h3></li>
+                <li>09:00-11:00 Uhr</li>
+              </ul>
+            </div>
+            <p class="times__para">
+              Außerhalb der Sprechzeiten erreichen Sie uns in dringenden Fällen
+              unter der Telefonnummer<br />
+              <a href="tel:+49176 270 99 878"> +49 176 270 99 878</a>
+            </p>
           </div>
         </div>
       </section>
-      <!--Sprechzeiten-->
-      <section class="sprechzeiten">
-        <div class="row">
-          <div class="times__container">
-            <div class="times__wrapper">
-              <figure class="times__img">
-                <img src="./Tierarzt__IMG__Nadine/trees.png" alt="" />
-              </figure>
-              <div class="times__list--wrapper">
-                <h2>Sprechzeiten</h2>
-                <ul class="times__list">
-                  <li><h3>Montag & Freitag</h3></li>
-                  <li>09:00-11:00 Uhr & 15:00-18:00 Uhr</li>
-                  <li><h3>Dienstag-Donnerstag</h3></li>
-                  <li>09:00-11:00 Uhr</li>
-                </ul>
-                <span class="times__para"
-                  >Außerhalb der Sprechzeiten erreichen Sie uns in dringenden
-                  Fälllen unter der Telefonnummer<br />
-                  <a href="tel:+4917627099878">+49 176 270 99 878</a>
-                </span>
-              </div>
+      >
 
-              <figure class="times__img--left">
-                <img src="./Tierarzt__IMG__Nadine/Dog__Smile.png" alt="" />
-              </figure>
+      <!---Arzt-Info-->
+      <section class="vet">
+        <div class="row">
+          <div class="vet__container">
+            <div class="vet__container--wrapper">
+            <div class="vet__heading">
+              <h2>Dr. Till Robl</h2>
+              <p>Ihr Praktischer Tierarzt vor Ort</p>
             </div>
+
+            <div class="vet__info">
+           <figure>
+              <img src="./Tierarzt__IMG__Nadine/Dr.Robl.png" alt="" style="width: 415px; height: 474px;" />
+            </figure>
+            <div>
+              <p class="vet__para">Nach dem Studium der Veterinärmedizin, das eine Fülle der
+              unterschiedlichsten Tierarten lehrt, entwickelt man sich zum
+              Experten für eine Nische in der Tierwelt.</p>
+              <br>
+              <p class="vet__para">In unserer Praxis kümmern wir uns ausschließlich um kleine Haustiere, das heißt:</p>
+              <br><br>
+              <ul class="vet_list">
+                <li class="vet__list-item">Hunde</li>
+                <li class="vet__list-item">Katzen</li>
+                <li class="vet__list-item">Kaninchen</li>
+                <li class="vet__list-item">Nagetiere</li>
+                <li class="vet__list-item">Schildkröten</li>
+                <li class="vet__list-item">Fische</li>
+                <li class="vet__list-item">Vögel</li>
+              </ul>
+              <br>
+              <p class="vet__para"> Alles, was mehr Beine hat, schicken wir zu Kollegen, die sich darauf
+              spezialisiert haben.</p>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
       </section>
@@ -177,141 +200,6 @@
           </div>
         </div>
       </section>
-      <!---FAQ---->
-      <section class="faqs">
-        <div class="row">
-          <div class="faq__container">
-            <div class="faq__info--wrapper">
-              <h2>Fragen & Antworten</h2>
-              <div class="faq__questions">
-                <div class="faq__dropdown">
-                  <label for="touch"
-                    ><span
-                      >Welche “kleinen Tiere” werden in der Praxis behandelt?
-                    </span></label
-                  >
-                  <input type="checkbox" id="touch" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch2"><span>Vorsorgeuntersuchung</span></label>
-                  <input type="checkbox" id="touch2" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch3"
-                    ><span>Die richtige Ernährung</span></label
-                  >
-                  <input type="checkbox" id="touch3" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch4"
-                    ><span
-                      >Kennzeichnung von Tieren durch einen Mikrochip</span
-                    ></label
-                  >
-                  <input type="checkbox" id="touch4" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch5"
-                    ><span>Parasiten bei Hund und Katz - Flöhe</span></label
-                  >
-                  <input type="checkbox" id="touch5" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch6"
-                    ><span>Parasiten bei Hund und Katz - Zecken</span></label
-                  >
-                  <input type="checkbox" id="touch6" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch7"
-                    ><span>Haftpflichtversicherung</span></label
-                  >
-                  <input type="checkbox" id="touch7" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch8"
-                    ><span
-                      >Sollte ich eine Krankenversicherung für mein Haustier
-                      abschließen?</span
-                    ></label
-                  >
-                  <input type="checkbox" id="touch8" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch9"
-                    ><span>Eigendiagnose via Internet</span></label
-                  >
-                  <input type="checkbox" id="touch9" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-                <div class="faq__dropdown">
-                  <label for="touch10"><span>Abschied</span></label>
-                  <input type="checkbox" id="touch10" />
-                  <ul class="slide">
-                    <li>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Pariatur officia nemo animi impedit ad harum!
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!---Footer-->
       <section class="footer">
         <div class="row">
@@ -320,13 +208,12 @@
               <figure class="footer__infos">
                 <img
                   src="./wrap__images/Tierarzt Symbol_beschnitten.png"
-                 
                   alt=""
                 />
                 <span class="footer__info--para">
-                <h4>Tierarztpraxis am Gesundbrunnen</h4>
-                <p>Dr. Till Robl</p>
-              </span>
+                  <h4>Tierarztpraxis am Gesundbrunnen</h4>
+                  <p>Dr. Till Robl</p>
+                </span>
               </figure>
               <span class="footer__links">
                 <a class="footer__link" href="#">Impressum</a>
