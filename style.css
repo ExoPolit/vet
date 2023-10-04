@@ -359,6 +359,37 @@ article {
 article h2 {
   margin: 12px 0;
 }
+
+/* 
+
+InfoBlock
+
+*/
+.info__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info__wrapper{
+  margin-top: 64px;
+  background-color: #fff;
+  max-width: 600px;
+  max-height: 294px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+padding: 42px 40px 37px 57px;
+gap: 24px;
+}
+.info__para{
+  font-size: 24px;
+  text-align: center;
+}
+.underlined{
+  text-decoration: underline;
+}
 /*
 
 FOOTER
