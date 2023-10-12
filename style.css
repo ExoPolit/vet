@@ -12,6 +12,7 @@ body {
   background: linear-gradient(180deg, #fff 15.1%, #e1c5b7 100%);
 }
 .row {
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -186,6 +187,8 @@ Kontakt
   position: relative;
   margin-top: 32px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -215,8 +218,7 @@ Kontakt
 }
 
 .times__para {
-  position: absolute;
-  bottom: -6rem;
+  padding-top: 2rem;
   width: 496px;
   color: #342b26;
   text-align: center;
@@ -226,6 +228,8 @@ Kontakt
 }
 .times__para a {
   color: black;
+  font-size: 24px;
+  text-decoration: underline;
 }
 
 /*
@@ -350,15 +354,16 @@ SpezialGebiet
   max-width: 992px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 article {
-  flex-direction: column;
-  line-height: 1.2;
+  list-style-type:armenian;
+  line-height: 1.25;
 }
 article h2 {
   margin: 12px 0;
 }
+
 
 /* 
 
@@ -427,12 +432,14 @@ FOOTER
 
 @media (max-width: 576px) {
   .header {
-    min-width: 1000px;
+    min-width: 1100px;
     background-position: 80% 60%;
   }
   .header__para {
+    font-size: 24px;
+    width: 100%;
     right: -40%; /* Adjust the positioning of the header content */
-    top: 10%; /* Adjust the positioning of the header content */
+    top: 75%; /* Adjust the positioning of the header content */
   }
   .header__para h1 {
     font-size: 60px;
@@ -443,7 +450,5 @@ FOOTER
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
   }
 }
